@@ -1,0 +1,22 @@
+{
+    "name": "ellyzeul/calendar_backend",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Ellyzeul",
+            "email": "gabrielaug.240@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Calendar\\Model\\": "src/model/",
+            "Calendar\\View\\": "src/view/",
+            "Calendar\\Controller\\": "src/controller/",
+            "Calendar\\Route\\": "route/"
+        }
+    }
+}
