@@ -3,7 +3,7 @@
 use Calendar\Controller\EventController;
 
 
-class Event
+class EventRouter
 {
     public static function handle(string $operation, array $request)
     {
@@ -40,6 +40,9 @@ class Event
 
     private static function delete(array $request)
     {
-        EventController::delete($request);
+        EventController::delete(
+            $request['date'],
+            $request['id']
+        );
     }
 }

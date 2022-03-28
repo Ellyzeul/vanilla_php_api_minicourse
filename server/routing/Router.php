@@ -1,6 +1,6 @@
 <?php namespace Calendar\Routing;
 
-use Calendar\Routing\Event;
+use Calendar\Routing\EventRouter;
 
 
 class Router
@@ -18,6 +18,6 @@ class Router
 
     public static function event(string $operation, array $request)
     {
-        Event::handle($operation, $request);
+        EventRouter::handle($operation, $request);
     }
 }

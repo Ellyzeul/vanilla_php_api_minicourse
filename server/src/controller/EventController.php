@@ -1,5 +1,8 @@
 <?php namespace Calendar\Controller;
 
+use Calendar\Model\Event;
+use Calendar\View\View;
+
 
 class EventController
 {
@@ -10,7 +13,14 @@ class EventController
         string $endHour
     )
     {
+        [$response, $statusCode] = Event::create(
+            $date, 
+            $description, 
+            $startHour, 
+            $endHour
+        );
 
+        View::render($response, $statusCode);
     }
 
     public static function read(string $date)
