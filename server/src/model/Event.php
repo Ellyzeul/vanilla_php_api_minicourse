@@ -31,7 +31,10 @@ class Event
         ], 500];
 
         return [[
-            "id" => $db->insert_id
+            "id" => $db->insert_id,
+            "message" => "Evento inserido com sucesso",
         ], 201];
     }
+
+
 }
