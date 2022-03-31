@@ -15,9 +15,8 @@ $request = json_decode(file_get_contents('php://input'), true);
 try {
     Router::handle($uri, $request);
 }
-catch (Throwable $e) {
+catch (Error $e) {
     View::render([
-        "error_message" => $e->getMessage()
+        "error_message" => "Algum erro ocorreu no servidor..."
     ], 500);
 }
-
