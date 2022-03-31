@@ -7,6 +7,7 @@ class View
     {
         $json = json_encode($response);
         http_response_code($statusCode);
+        header("Content-Type: application/json");
 
         echo $json;
     }
