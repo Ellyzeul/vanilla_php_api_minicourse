@@ -16,7 +16,7 @@
             "Calendar\\Model\\": "src/model/",
             "Calendar\\View\\": "src/view/",
             "Calendar\\Controller\\": "src/controller/",
-            "Calendar\\Controller\\Service\\": "src/controller/service",
+            "Calendar\\Controller\\Service\\": "src/model/service",
             "Calendar\\Routing\\": "routing/"
         }
     }
