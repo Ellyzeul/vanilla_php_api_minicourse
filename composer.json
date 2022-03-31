@@ -14,9 +14,9 @@
     "autoload": {
         "psr-4": {
             "Calendar\\Model\\": "src/model/",
+            "Calendar\\Model\\Service\\": "src/model/service",
             "Calendar\\View\\": "src/view/",
             "Calendar\\Controller\\": "src/controller/",
-            "Calendar\\Controller\\Service\\": "src/model/service",
             "Calendar\\Routing\\": "routing/"
         }
     }
